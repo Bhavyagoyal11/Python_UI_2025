@@ -1,0 +1,135 @@
+/* Reset and Base Styles */
+* {
+  font-family: 'Bitcount Single Ink', monospace;
+}
+
+/* Layout */
+.page-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Header Styles */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 4px 8px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 50px;
+}
+
+.search-box button {
+  background: #00050e;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #3367d6;
+}
+
+/* Card Layout */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+/* Section Styles */
+.section-title {
+  margin: 16px 0 8px 0;
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+/* Table Styles - Original */
+table {
+  border-collapse: collapse;
+  width: 60%;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+}
+
+/* Media Styles */
+.media-images {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 16px 0;
+}
+
+.media-images img {
+  width: 280px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Video Styles */
+.media-video {
+  margin-top: 12px;
+}
+
+.media-video .video {
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+}
+
+/* Video Section */
+.video-section {
+  padding: 12px 12px 20px 12px;
+}
+

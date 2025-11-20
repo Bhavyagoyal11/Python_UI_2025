@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css-class</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid rgb(3, 2, 0);
+        justify-content: space-evenly;
+      }
+
+      #container1 {
+        display: flex;
+        gap: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Home</div>
+      <div class="item">About</div>
+      <div class="items" id="container1">
+        <a href="">item1</a>
+        <a href="">item2</a>
+        <a href="">item3</a>
+      </div>
+      <div class="item">service</div>
+    </div>
+  </body>
+</html>
+
+<!--
+justify-content: it is used for spacing.
+-->

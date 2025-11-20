@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Table</title>
+
+    <style>
+      /* GLOBAL STYLING */
+      body {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* BUTTON STYLING */
+      .btn-primary,
+      .btn-secondary {
+        border: none;
+        border-radius: 10px;
+        padding: 12px 20px;
+        margin: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.4s ease;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+      }
+
+      .btn-primary:active {
+        background-color: #004085;
+        transform: scale(1.05);
+      }
+
+      .btn-secondary {
+        background-color: #e0e0e0;
+        color: #000;
+        font-weight: 600;
+        border-radius: 6px;
+      }
+
+      .btn-secondary:hover {
+        background-color: #007bff;
+        color: white;
+      }
+
+      .btn-secondary:active {
+        background-color: #004085;
+        color: white;
+        transform: scale(1.1);
+      }
+
+      /* FLEX CONTAINER FOR BUTTONS */
+      .button-line {
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* spacing between buttons */
+        margin: 20px 0;
+        flex-wrap: wrap;
+      }
+
+      /* TABLE STYLING */
+      table {
+        border: 2px solid #000;
+        border-collapse: collapse;
+        width: 320px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      }
+
+      th,
+      td {
+        border: 2px solid #000;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #0d6efd;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      td {
+        color: #000;
+        font-weight: 500;
+      }
+
+      tr:nth-child(even) {
+        background-color: #e9f2ff;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+
+      tr:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      /* SPAN AND DIV STYLING */
+      .span-box {
+        display: inline-block;
+        border: 2px solid #000;
+        margin: 30px;
+        width: 200px;
+        height: 80px;
+        line-height: 80px;
+        background-color: #ffffff;
+        font-weight: bold;
+        color: #0d6efd;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .div-box {
+        border: 2px solid #0d6efd;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        background-color: #e9f2ff;
+        padding: 20px 30px 40px 50px;
+        border-radius: 10px;
+        color: #000;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- All buttons in a single line -->
+    <div class="button-line">
+      <button class="btn-primary">Click Here</button>
+      <button class="btn-secondary">Subscribe</button>
+      <button class="btn-secondary">Click</button>
+    </div>
+
+    <!-- Student Information Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Bhavya</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Prakhar</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Vishwas</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>Yash Kothari</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>Deepak</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Span and Div Examples -->
+    <span class="span-box">Span Tag</span>
+    <div class="div-box">Div Tag</div>
+  </body>
+</html>

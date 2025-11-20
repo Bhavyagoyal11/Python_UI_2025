@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media_queries</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        display: flex;
+        gap: 20px;
+      }
+
+      @media (min-width: 400px) {
+        .container {
+          border: 2px solid black;
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+        }
+
+        .items {
+          display: flex;
+          gap: 20px;
+        }
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .container {
+          border: 2px solid black;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .items {
+          display: flex;
+          gap: 20px;
+        }
+        
+        a {
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Home</div>
+      <div class="item">About</div>
+      <div class="items" id="container1">
+        <a href="">item1</a>
+        <a href="">item2</a>
+        <a href="">item3</a>
+      </div>
+      <div class="item">service</div>
+    </div>
+  </body>
+</html>

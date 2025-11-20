@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Bhavya Goyal , 02/09/2025-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form in HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="Navbar">
+    <span id="a1"><a href="">Home</a></span>
+    <span id="a2"><a href="">About us</a></span>
+    <span id="a3"><a href="">Contact</a></span>
+    <span id="a4"><a href="">Services</a></span>
+  </div>
+
+  <div class="sub_sup">
+    <p>H<sub>2</sub>O</p>
+    <p>x<sup>2</sup></p>
+  </div>
+
+  <div class="form-container">
+    <form class="Form" action="">
+      <div class="name">
+        <label for="name">Full name </label>
+        <input type="text" id="name" placeholder="Enter your name : " required minlength="7" maxlength="18">
+      </div>
+      
+      <div class="Email">
+        <label for="Email">Email</label>
+        <input type="email" id="Email" placeholder="Enter your Email : " value="Default@gmail.com" required readonly>
+      </div>
+      
+      <div class="Pass">
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="Enter your Password" required minlength="8" maxlength="12" autocomplete="on">
+      </div>
+      
+      <div class="date">
+        <label for="date">Date</label>
+        <input type="date" id="date">
+      </div>
+      
+      <div class="age">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age" min="18" max="30">
+      </div>
+
+      <div class="checkbox">
+        <label for="verify">Verified ?</label>
+        <input type="checkbox" id="verify">
+      </div>
+      
+      <div class="select">
+        <label for="country">Country :</label>
+        <select id="country">
+          <option>India</option>
+          <option>USA</option>
+          <option>China</option>
+        </select>
+      </div>
+      
+      <div class="gender">
+        <label>Gender: </label>
+        <input type="radio" id="op1" name="gender" value="male">
+        <label for="op1">Male</label>
+        <input type="radio" id="op2" name="gender" value="female">
+        <label for="op2">Female</label>
+      </div>
+      
+      <div class="button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
