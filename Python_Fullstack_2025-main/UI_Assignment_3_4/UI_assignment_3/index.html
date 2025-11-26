@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OMusic — Minimal Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden><path d="M12 3c-1.1 0-2 .9-2 2v10.5a3.5 3.5 0 1 0 2 0V5c0-1.1-.9-2-2-2z"></path></svg>
+        <span>OMusic</span>
+      </div>
+
+      <nav class="menu">
+        <button class="menu-item active">Home</button>
+        <button class="menu-item">Discover</button>
+        <button class="menu-item">Radio</button>
+        <button class="menu-item">Podcast</button>
+      </nav>
+
+      <div class="library">
+        <div class="lib-title">Library</div>
+        <ul>
+          <li>Albums</li>
+          <li>Songs</li>
+          <li>Artists</li>
+        </ul>
+      </div>
+
+      <div class="side-footer">© OMusic</div>
+    </aside>
+
+    <main class="main">
+      <section class="content">
+        <div class="hero">
+          <div class="hero-art">
+            <img id="heroCover" src="img/mock-cover.jpg" alt="cover" />
+          </div>
+          <div class="hero-info">
+            <h1>Top Song Of The Week</h1>
+            <p class="hero-actions">
+              <button class="btn primary" id="heroPlay">Play</button>
+              <button class="btn ghost">View Playlist</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-and-table">
+          <div class="table-card">
+            <div class="table-head">Global Top 50</div>
+            <table class="track-table" id="trackTable">
+              <thead>
+                <tr><th>#</th><th>Title</th><th>Artist</th><th>Time</th></tr>
+              </thead>
+              <tbody>
+                <!-- rows injected by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- bottom player bar -->
+        <aside class="mini-player-card bottom-player" id="miniPlayer">
+          <div class="player-left">
+            <div class="mini-cover">
+              <img id="miniCover" src="img/mock-cover.jpg" alt="cover" />
+            </div>
+            <div class="mini-text">
+              <div class="mini-title" id="miniTitle">Track Title</div>
+              <div class="mini-artist" id="miniArtist">Artist</div>
+            </div>
+          </div>
+
+          <div class="player-center">
+            <div class="mini-controls">
+              <button class="icon" id="prev" title="Previous">⏮</button>
+              <button class="play-main" id="play">
+                <svg id="playIcon" viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg>
+                <svg id="pauseIcon" viewBox="0 0 24 24" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+              </button>
+              <button class="icon" id="next" title="Next">⏭</button>
+            </div>
+
+            <div class="progress-mini">
+              <input id="progress" type="range" min="0" value="0" />
+              <div class="time-row"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+            </div>
+          </div>
+
+          <div class="player-right">
+            <div class="volume-controls">
+              <button class="icon volume-btn" id="volDown" title="Volume down">−</button>
+              <button class="icon volume-btn" id="volUp" title="Volume up">+</button>
+              <span id="volLabel" class="volume-label">100%</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
